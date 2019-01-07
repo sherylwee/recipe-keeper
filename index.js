@@ -81,6 +81,7 @@ app.get('/recipes/:id/edit', (request, response) => {
         jsonfile.readFile(file, (err, obj) => {
             let searchedRecipe = obj.recipes[id];
             console.log("testing ");
+            console.log("Well done");
             response.render("edit", searchedRecipe)
 
         });

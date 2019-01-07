@@ -1,4 +1,6 @@
 var React = require('react');
+
+//displays form for adding a recipe
 class Recipes extends React.Component {
 
   render() {
@@ -19,9 +21,11 @@ class Recipes extends React.Component {
     </head>
     <body>
       <div>
+            <button><a href="/recipes/new" style={{textDecoration: "none", color: "grey"}}>Create a new recipe</a>
+            </button>
         <h1>Recipes</h1>
         {recipes}
-            <button><a href="/recipes/new" style={{textDecoration: "none", color: "grey"}}>Create a new recipe</a></button>
+
 
 
 

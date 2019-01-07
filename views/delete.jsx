@@ -1,4 +1,6 @@
 var React = require('react');
+
+// page that confirms the deletion of recipe
 class DeleteRecipe extends React.Component {
 
   render() {
@@ -15,7 +17,7 @@ class DeleteRecipe extends React.Component {
             <h2>Ingredients: {this.props.ingredients}</h2><br/>
             <h2>Instructions: {this.props.instructions}</h2><br/><br/>
 
-                <form method="POST" action={"/recipes/" + this.props.recipe.id + "?_method=DELETE"}>
+                <form method="POST" action={"/recipes/" + this.props.id + "?_method=DELETE"}>
                     <input type="submit" value="Delete Recipe"/>
                 </form>
 
